@@ -51,10 +51,10 @@ a {
   letter-spacing: -1px;
 }
 
-.section__desc {
+.section-desc {
   margin-top: 18px;
   color: #575f66;
-  font-size: 1.8px;
+  font-size: 1.8rem;
   font-weight: 300;
   line-height: 167%;
 }
@@ -103,7 +103,7 @@ a {
   bottom: 3px;
 }
 
-.header__action--signup {
+.header__action--sign-up {
   min-width: 144px;
   line-height: 44px;
   font-size: 1.6rem;
@@ -192,7 +192,7 @@ a {
 
 .service__desc {
   width: 468px;
-  margin: 0 auto;
+  margin: 18px auto 0;
 }
 
 .service__row {
@@ -261,4 +261,65 @@ a {
 
 .service__btn {
   margin-top: 55px;
+}
+
+/* ========================how it works======================= */
+.work {
+  background: #f6fbff;
+  padding: 100px 0;
+}
+
+.work__desc {
+  width: 468px;
+}
+
+.work__list {
+  display: grid;
+  margin-top: 86px;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+}
+
+.work-item {
+  border-radius: 4px;
+  background: #fff;
+  padding: 42px 43px;
+  border: 16px solid #eaf6ff;
+  transition: 0.5s;
+}
+
+.work-item:hover {
+  border-radius: 4px;
+  border: 16px solid #2e80ce;
+  transition: 0.5s;
+  transform: translateY(-16px);
+}
+
+.work-item__heading {
+  margin-top: 18px;
+  color: var(--header-bg);
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 138%;
+}
+
+.work-item__desc {
+  margin-top: 28px;
+  color: #575f66;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 175%;
+}
+
+.work-item__more {
+  display: inline-block;
+  margin-top: 18px;
+  color: #575f66;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 175%;
+}
+
+.work-item:hover .work-item__more {
+  color: #2e80ce;
 }
