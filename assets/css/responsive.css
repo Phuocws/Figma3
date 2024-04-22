@@ -7,11 +7,11 @@
 
 /* Tablet & mobile */
 @media (max-width: 991.98px) {
-  /* hide navbar */
+  /* 1.hide navbar */
   .navbar {
     display: none;
   }
-  /* logo center */
+  /* 2.logo center */
   .header-top {
     position: relative;
   }
@@ -21,7 +21,7 @@
     translate: -50% -50%;
     left: 50%;
   }
-  /* navigation icon */
+  /* 3.navigation icon */
   .menu-header__icon {
     position: absolute;
     top: 38px;
@@ -30,7 +30,7 @@
     width: 24px;
     color: #ffffff;
   }
-  /* overlay */
+  /* 4.overlay */
   .menu-overlay {
     position: fixed;
     inset: 0;
@@ -45,7 +45,7 @@
     opacity: 1;
     visibility: visible;
   }
-  /* menu drawer */
+  /* 5.menu drawer */
   .menu-drawer {
     position: fixed;
     background: #000000d5;
@@ -58,7 +58,7 @@
   .menu-checkbox:checked ~ .menu-drawer {
     transform: rotateX(0);
   }
-  /* menu top */
+  /* 6.menu top */
   .menu-drawer__top {
     display: flex;
     justify-content: space-between;
@@ -77,6 +77,82 @@
 
   #navbar__list--mobile {
     margin-top: 25px;
+  }
+
+  .navbar__link {
+    font-size: 2rem;
+  }
+
+  .navbar__link:hover {
+    background: #137d9a;
+  }
+  /* 7.hero block */
+  .hero {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .hero__content {
+    order: 2;
+    width: 90%;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .hero__media {
+    order: 1;
+  }
+
+  .hero__row {
+    justify-content: center;
+  }
+  /* 8.service block */
+  .service__row {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .service__img {
+    width: 100%;
+    height: auto;
+  }
+
+  .service-item {
+    width: 90%;
+  }
+
+  .service__btn {
+    display: block;
+    width: 30%;
+    margin: 20px auto;
+  }
+  /* 9.how it works*/
+  .work__list {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+  /* 10.about us */
+  .about__media {
+    width: 90%;
+  }
+
+  .about-content {
+    width: 80%;
+    text-align: center;
+  }
+
+  .about-row {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .about__img--large {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .about__img--small {
+    display: none;
   }
 }
 
