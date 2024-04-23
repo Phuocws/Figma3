@@ -26,8 +26,8 @@
     position: absolute;
     top: 38px;
     left: 26px;
-    height: 16px;
-    width: 24px;
+    height: 26px;
+    width: 36px;
     color: #ffffff;
   }
   /* 4.overlay */
@@ -198,10 +198,6 @@
     padding: 20px 20px 0;
     text-align: center;
   }
-  /* 15.footer */
-  .footer__top {
-    grid-template-columns: 0.5fr 0.5fr 1fr;
-  }
 }
 
 /* tablet */
@@ -209,8 +205,123 @@
   .hidden__column {
     display: none;
   }
+
+  .footer__top {
+    grid-template-columns: 0.5fr 0.5fr 1fr;
+  }
+
+  .show-on__mobile {
+    display: none;
+  }
 }
 
 /* mobile */
 @media (max-width: 767.98px) {
+  /* 1.header */
+  .header__action {
+    display: none;
+  }
+
+  .menu-header__icon {
+    top: 16px;
+  }
+
+  .navbar__item {
+    list-style: none;
+  }
+
+  .separate {
+    border-top: 3px solid #ffffff;
+    margin: 15px 0;
+  }
+  /* 2.hero */
+  .hero__img--small {
+    display: none;
+  }
+
+  .hero__img--large {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero__heading {
+    font-size: 4rem;
+  }
+
+  .hero__row {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  /* 3.service */
+  .service {
+    padding: 70px 0px;
+  }
+
+  .service__desc {
+    width: 90%;
+  }
+
+  .service__img {
+    height: auto;
+  }
+  /* 4.how it work */
+  .work {
+    width: 100%;
+  }
+  .work__heading,
+  .work__desc {
+    width: 100%;
+    text-align: center;
+  }
+  /* 5.about us */
+  .about {
+    margin-top: 20px;
+    padding: 40px 0px;
+  }
+
+  .section-heading {
+    font-size: 4rem;
+  }
+  /* 6.our team */
+  .team__list {
+    grid-template-columns: 1fr;
+  }
+  /* 7.CTA */
+  .install {
+    margin-top: 50px;
+  }
+  .install__inner {
+    margin: 0px;
+    padding: 0 8px;
+  }
+
+  .install__content {
+    font-size: 4rem;
+  }
+  /* 8.blog */
+  .blog__list {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  .blog-item {
+    width: 100%;
+  }
+
+  .blog-item__thumb {
+    width: 100%;
+  }
+
+  .blog__heading {
+    text-align: center;
+  }
+  /* footer */
+  .footer__top {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  .footer__copyright {
+    margin-top: 30px;
+  }
 }

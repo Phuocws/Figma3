@@ -669,7 +669,6 @@ select {
   display: grid;
   grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
   column-gap: 78px;
-  border-bottom: 1px solid #2e80ce;
 }
 
 .footer__desc {
@@ -773,6 +772,7 @@ select {
 }
 
 .footer__copyright-text {
+  border-top: 1px solid #2e80ce;
   color: #aab3ba;
   text-align: center;
   font-size: 1.4rem;
